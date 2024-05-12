@@ -12,8 +12,8 @@ namespace TesteProjetoEixo2.Models
     public class Cliente
     {
         [Key]
-        [Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o CPF.")]
-        public int CPF { get; set; }
+        //[Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o CPF.")]
+        public string CPF { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o nome.")]
         public string Nome { get; set; }
@@ -26,6 +26,7 @@ namespace TesteProjetoEixo2.Models
         
         [Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o telefone.")]
         public int Numero { get; set; }
+        
         [Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha a data de nascimento.")]
         public DateTime DataNascimento { get; set; }
 
