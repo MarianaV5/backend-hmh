@@ -65,12 +65,23 @@
             <h4>Cadastre-se Aqui!</h4>
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <input type="text" placeholder="Nome" asp-for="Nome">
-                <input type="email" placeholder="E-mail" asp-for="Email">
-                <input type="text" placeholder="Telefone" asp-for="Numero">
-                <input type="password" placeholder="Senha" asp-for="Senha">
-                <input type="date" placeholder="Data de Nascimento" asp-for="DataNascimento">
-                <input type="number" placeholder="CPF">
+                <input type="text" placeholder="Nome" asp-for="Nome" class="form-control">
+                <span asp-validation-for="Nome" class="text-danger"></span>
+                
+                <input type="email" placeholder="E-mail" asp-for="Email" class="form-control">
+                <span asp-validation-for="Email" class="text-danger"></span>
+                
+                <input type="number" placeholder="Telefone" asp-for="Numero" class="form-control">
+                <span asp-validation-for="Numero" class="text-danger"></span>
+                
+                <input type="date" placeholder="Data de Nascimento" asp-for="DataNascimento" class="form-control">
+                <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                
+                <input type="text" placeholder="CPF" asp-for="CPF" class="form-control">
+                <span asp-validation-for="CPF" class="text-danger"></span>
+                
+                <input type="password" placeholder="Senha" asp-for="Senha" class="form-control">
+                <span asp-validation-for="Senha" class="text-danger"></span>
                 <button class="btn">Cadastrar</button>
             </form>
         </div>
