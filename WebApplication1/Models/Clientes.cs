@@ -13,7 +13,7 @@ namespace TesteProjetoEixo2.Models
     {
         [Key]
         //[Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o CPF.")]
-        public string CPF { get; set; }
+        public int CPF { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o nome.")]
         public string Nome { get; set; }
@@ -21,16 +21,16 @@ namespace TesteProjetoEixo2.Models
         [Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o email.")]
         public string Email { get; set; }
         
-        [Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o DDD.")]
-        public int DDD { get; set; }
+        //[Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o DDD.")]
+        //public int DDD { get; set; }
         
-        [Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o telefone.")]
+        //[Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha o telefone.")]
         public int Numero { get; set; }
         
-        [Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha a data de nascimento.")]
+        //[Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha a data de nascimento.")]
         public DateTime DataNascimento { get; set; }
 
-        [Required(ErrorMessage = "Campo Obrigatório. Por favor, informe uma senha.")]
+        //[Required(ErrorMessage = "Campo Obrigatório. Por favor, informe uma senha.")]
         public string Senha { get; set; }
     }
 }
