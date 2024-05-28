@@ -9,27 +9,37 @@
     <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+        <nav class="navbar navbar-expand-lg navbar-light navbar-colorida">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApplication1</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">H<span>+</span>H</a>
+                <!-- Botão para menu responsivo -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                <!-- Itens de navegação (adicionar links posteriormente)-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <button class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </button>
+                        <button class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </button>
+                        <button class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </button>
+                        <button class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </button>
+                        <button class="nav-item">
+                            <a class="nav-link" href="#">Conta</a>
+                        </button>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -37,9 +47,38 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - WebApplication1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+        <footer>
+            <div class="container-footer">
+                <div class="footer-content">
+                    <h3>Contato</h3>
+                    <p>Email:Info@example.com</p>
+                    <p>Telefone (00) 0 0000-0000</p>
+                    <p>Endereço: Rua Exemplo da Silva </p>
+                </div>
+                <div class="footer-content">
+                    <h3>Quick Links</h3>
+                    <ul class="list-footer">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">SERVIÇOS</a></li>
+                        <li><a href="">SOBRE</a></li>
+                        <li><a href="">CONTATO</a></li>
+                        <li><a href="">LOGIN</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href=""><img src="facebook.png" style="width: 32px;"></i></a></li>
+                        <li><a href=""><img src="twitter.png" style="width: 32px;"></i></a></li>
+                        <li><a href=""><img src="instagram.png" style="width: 32px;"></i></a></li>
+                        <li><a href=""><img src="linkedin.png" style="width: 32px;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy; 2023 your company . All rights reserved</p>
+            </div>
+        </footer>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
