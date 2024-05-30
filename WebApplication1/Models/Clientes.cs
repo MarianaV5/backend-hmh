@@ -29,6 +29,12 @@ namespace TesteProjetoEixo2.Models
         
         //[Required(ErrorMessage = "Campo Obrigatório. Por favor, preencha a data de nascimento.")]
         public DateTime DataNascimento { get; set; }
+master1
+
+        [Required(ErrorMessage = "Campo Obrigatório!")]
+        [DataType(DataType.Password)]
+        public string Senha { get; set; }
+master1
 
         //[Required(ErrorMessage = "Campo Obrigatório. Por favor, informe uma senha.")]
         public string Senha { get; set; }
